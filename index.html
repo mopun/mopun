@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <link rel="stylesheet" href="style1.css">
+    </head>
+    <meta charset="utf-8">
+    <title>javaScript テスト</title>
+    <meta name="description" content="ディスクリプションを入力">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <body>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="style1.css">
+
+    <style>
+        body {
+            background-color:#FFDBDD;
+            color:#006300;
+        }
+        input,label,div {
+            font-size: 25px;
+            color:#000088;
+        }
+        span {
+            font-size: 25px;
+            color:#ff0000;
+        }
+    </style>
+
+    <input type="checkbox" name="item" id="price1c" value="1">
+    <label>施設1:</label>
+    <input type="tel" id="price1" size="5">
+    <label>円/1週間</label>
+    <span id="p1cerr"></span>
+    <span id="p1cerrc"></span><br>
+    <input type="checkbox" name="item" id="price2c" value="1">
+    <label>施設2:</label>
+    <input type="tel" id="price2" size="5">
+    <label>円/1週間</label>
+    <span id="p2cerr"></span>
+    <span id="p2cerrc"></span><br>
+    <input type="checkbox" name="item" id="price3c" value="1">
+    <label>施設3:</label>
+    <input type="tel" id="price3" size="5">
+    <label>円/1週間</label>
+    <span id="p3cerr"></span>
+    <span id="p3cerrc"></span><br>
+
+    週単価は\1,000～\1,000,000の範囲で指定してもふ。<br>
+    必ず何れかの施設を選んでもふよ♪<br><br>
+
+    <label>開始日:</label>
+    <input type="date" id="date1">
+    <span id="d1err"></span><br>
+    <label>終了日:</label>
+    <input type="date" id="date2">
+    <span id="d2err"></span><br>
+
+    チェックボックスで選択した施設の週単価×使用期間(日数/7)で料金が計算されるもふよ。<br>
+    必ず終了日は開始日以降に設定してもふよ♪<br><br>
+
+    <label>期間:</label>
+    <label id="result"></label><br>
+
+    <label>料金:</label>
+    <label id="Tprice"></label><br>
+
+    <input type="button" value="結果発表"  id="mybtn1">
+    <input type="button" value="結果クリア"  id="mybtn2">
+
+    <script src="main2.js"></script>
+    </body>
+</html>
